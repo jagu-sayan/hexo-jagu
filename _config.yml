@@ -1,0 +1,9 @@
+# Header
+menu:
+  Blog: /
+  Projets: /project
+  A propos: /about
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
