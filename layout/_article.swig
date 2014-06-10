@@ -1,9 +1,9 @@
 <article id="{{ post.layout }}-{{ post.slug }}" class="article" itemscope itemprop="blogPost">
 	<div class="article-meta">
 		<a href="{{ config.root }}{{ post.path }}" class="{{ class_name }}">
-		<time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
-			<div class="article-day">{{ date(post.date, 'D') }}</div>
-			<div class="article-month">{{ date(post.date, 'MMM') }}</div>
+		<time datetime="{{ date_xml(post.date) }}" itemprop="datePublished">
+			<span class="article-day">{{ date(post.date, 'D') }}</span>
+			<span class="article-month">{{ date(post.date, 'MMM') }}</span>
 		</time>
 		</a>
 	</div>

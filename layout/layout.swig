@@ -28,11 +28,11 @@
 				<li>
 					<a href="{{ i }}" {% if idx == loop.index %}class="over"{% endif %}>
 						{{ loop.key }}
-						<div class="icon"{% if idx == loop.index %} id="icon-over"{% endif %}"></div>
+						<div class="icon"{% if idx == loop.index %} id="icon-over"{% endif %}></div>
 					</a>
 				</li>
 			{% endfor %}
-				<li>{{ search_form({button: 'GO'}) }}</li>
+				<li id="search_form">{{ search_form({button: 'GO'}) }}</li>
 			</ul>
 		</nav>
 	</header>
@@ -41,7 +41,8 @@
 			{{ body }}
 		</section>
 		<footer id="footer">
-			Copyright © 2014 Jacob ZAK - <a href="/legal">Mentions Légales</a>
+			<span>Copyright © 2014 Jacob ZAK</span>
+			- <a href="/legal">Mentions Légales</a>
 			- <a href="https://github.com/jagu-sayan/" id="footer-github" class="icon" title="">&nbsp;Suivez moi sur github</a>
 			- <a href="#header" id="footer-up" class="icon" title="Haut de page">Haut&nbsp;de&nbsp;page </a>
 		</footer>
