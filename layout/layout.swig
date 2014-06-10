@@ -28,6 +28,7 @@
 				<li>
 					<a href="{{ i }}" {% if idx == loop.index %}class="over"{% endif %}>
 						{{ loop.key }}
+						<div class="icon"{% if idx == loop.index %} id="icon-over"{% endif %}"></div>
 					</a>
 				</li>
 			{% endfor %}

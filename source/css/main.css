@@ -107,6 +107,10 @@ h1
 	background: 0;
 }
 
+#header .search-form input[type=search]
+{
+	border-radius: 20px;
+}
 
 nav form
 {
@@ -130,12 +134,35 @@ nav li a
 	font-size: 13px;
 	line-height: 30px;
 	padding: 7px 13px;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	transition: color 0.3s;
 }
 nav li a.over, nav li a:hover
 {
-	background: url(/img/fleche.png) no-repeat scroll 50% bottom transparent;
 	color: #f1f1f1;
 	cursor: pointer;
+}
+
+nav li a div
+{
+	width:20px;
+	height:0px;
+	margin: 0 auto;
+	color: #fff;
+	position: relative;
+	top: -12px;
+	font-size: 20px;
+}
+nav li a div:before
+{
+}
+
+nav li a:hover div:before, #icon-over:before
+{
+	display: block;
+	content: '\e804';
 }
 
 .wrap
